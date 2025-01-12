@@ -156,6 +156,16 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Still visual mode after indeting
+vim.keymap.set("v", "<", "<gv", { noremap = true, silent = true })
+vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
+
+-- change tab to space
+vim.opt.expandtab = true      -- Use spaces instead of tabs
+vim.opt.tabstop = 4           -- Number of spaces for a tab
+vim.opt.shiftwidth = 4        -- Number of spaces for autoindent
+vim.opt.softtabstop = 4       -- Number of spaces for editing
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
